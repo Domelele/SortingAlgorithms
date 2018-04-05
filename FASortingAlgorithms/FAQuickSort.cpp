@@ -4,10 +4,10 @@
 #include <ctime>
 using namespace std;
 
-void FAQuickSort::swap(int a, int b) {
-	int temp = a;
-	a = b;
-	b = temp;
+void FAQuickSort::swap(int *a, int *b) {
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
 void FAQuickSort::sort(int *arr, int left, int right) {
 	int l = left;
@@ -24,7 +24,7 @@ void FAQuickSort::sort(int *arr, int left, int right) {
 				l++;
 			}
 			if (l < r) {
-				swap(arr[l], arr[r]);
+				swap(&arr[l], &arr[r]);
 				l++;
 			}
 		}
