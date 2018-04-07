@@ -1,4 +1,4 @@
 ﻿  FASortingAlgorithms.cpp
-c:\users\dominik\source\repos\sortingalgorithms\fasortingalgorithms\fasortingalgorithms.cpp(10): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\dominik\source\repos\sortingalgorithms\fasortingalgorithms\fasortingalgorithms.cpp(12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\dominik\source\repos\sortingalgorithms\fasortingalgorithms\fasortingalgorithms.cpp(23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\dominik\source\repos\sortingalgorithms\fasortingalgorithms\fasortingalgorithms.cpp(25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   FASortingAlgorithms.vcxproj -> C:\Users\Dominik\Source\Repos\SortingAlgorithms\Debug\FASortingAlgorithms.exe
