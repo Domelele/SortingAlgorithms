@@ -32,20 +32,3 @@ void FAQuickSort::sort(int *arr, int left, int right) {
 		sort(arr, r, right);
 	}
 }
-
-
-//Create a random array
-/*int* FAQuickSort::makeRandomArray(int size) {
-	int* array = new int[size];
-	srand(time(NULL));
-	for (int i = 0; i < size; i++) {
-		array[i] = (100.0 * rand()) / RAND_MAX;
-	}
-	return array;
-}
-*/
-void FAQuickSort::printArray(int *arr, int size) {
-	for (int i = 0; i < size; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}

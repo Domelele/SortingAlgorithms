@@ -21,9 +21,3 @@ void FASelectionSort::sort(int arr[], int n) {
 		swap(&arr[min], &arr[k]);
 	}
 }
-
-void FASelectionSort::printArray(int arr[], int size) {
-	for (int i = 0; i < size; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}

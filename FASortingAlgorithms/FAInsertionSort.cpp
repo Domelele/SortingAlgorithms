@@ -19,9 +19,3 @@ void FAInsertionSort::sort(int arr[], int n) {
 		}
 	}
 }
-
-void FAInsertionSort::printArray(int arr[], int size) {
-	for (int i = 0; i < size; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}

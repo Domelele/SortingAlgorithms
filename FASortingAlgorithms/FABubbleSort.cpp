@@ -23,9 +23,3 @@ void FABubbleSort::sort(int arr[], int n) {
 			break;
 	}
 }
-
-void FABubbleSort::printArray(int arr[], int size) {
-	for (int i = 0; i < size; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}
