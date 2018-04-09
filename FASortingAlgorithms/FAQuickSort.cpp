@@ -9,10 +9,11 @@ void FAQuickSort::swap(int *a, int *b) {
 	*a = *b;
 	*b = temp;
 }
-void FAQuickSort::sort(int *arr, int left, int right) {
+int FAQuickSort::sort(int *arr, int left, int right) {
 	int l = left;
 	int r = right - 1;
 	int size = right - left;
+	int sorts = 0;
 
 	if (size > 1) {
 		int pivot = arr[rand() % size + l];
@@ -25,10 +26,10 @@ void FAQuickSort::sort(int *arr, int left, int right) {
 			}
 			if (l < r) {
 				swap(&arr[l], &arr[r]);
+				int sorts = 0;
 				l++;
 			}
 		}
-		sort(arr, left, l);
-		sort(arr, r, right);
+		return sorts + sort(arr, left, l) + sort(arr, r, right);
 	}
 }

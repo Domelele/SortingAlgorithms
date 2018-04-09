@@ -9,8 +9,9 @@ void FASelectionSort::swap(int *a, int *b) {
 	*b = temp;
 }
 
-void FASelectionSort::sort(int arr[], int n) {
+int FASelectionSort::sort(int arr[], int n) {
 	int min; // index of smallest element
+	int sorts = 0;
 	for (int k = 0; k < n - 1; k++) {
 		min = k;
 		for (int j = k + 1; j < n; j++) {
@@ -19,5 +20,7 @@ void FASelectionSort::sort(int arr[], int n) {
 			}
 		}
 		swap(&arr[min], &arr[k]);
+		sorts++;
 	}
+	return sorts;
 }

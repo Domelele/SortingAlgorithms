@@ -4,5 +4,5 @@ class FABubbleSort
 {
 	public:
 		void swap(int *a, int *b);
-		void sort(int arr[], int n);
+		int sort(int arr[], int n);
 };
