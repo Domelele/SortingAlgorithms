@@ -15,8 +15,8 @@ int FAInsertionSort::sort(int arr[], int n) {
 	for (i = 1; i < n; i++) {
 		j = i;
 		while (j > 0 && arr[j - 1] > arr[j]) {
+			sorts++; //zählt Vergleichsoperationen
 			swap(&arr[j], &arr[j - 1]);
-			sorts++;
 			j--;
 		}
 	}

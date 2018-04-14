@@ -20,13 +20,15 @@ int FAQuickSort::sort(int *arr, int left, int right) {
 		while (l < r) {
 			while (arr[r] > pivot && r > l) {
 				r--;
+				sorts++; //zählt Vergleichsoperationen
 			}
 			while (arr[l] < pivot && l <= r) {
 				l++;
+				sorts++; //zählt Vergleichsoperationen
 			}
+			sorts++; //zählt Vergleichsoperationen 
 			if (l < r) {
 				swap(&arr[l], &arr[r]);
-				int sorts = 0;
 				l++;
 			}
 		}
