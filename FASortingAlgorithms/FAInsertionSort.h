@@ -3,8 +3,8 @@
 class FAInsertionSort
 {
 	public:
-		void swap(int a, int b);
-		void sort(int arr[], int n);
-		void printArray(int arr[], int size);
+		int iterations;
+		void swap(int *a, int *b);
+		int sort(int arr[], int n);
 };
 
